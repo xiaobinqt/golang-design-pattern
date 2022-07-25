@@ -2,6 +2,7 @@ package facade
 
 import "fmt"
 
+// 只需要去关注 API 这个窗口，不需要去关注具体的模块
 func NewAPI() API {
 	return &apiImpl{
 		a: NewAModuleAPI(),
